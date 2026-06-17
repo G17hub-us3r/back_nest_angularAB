@@ -1,0 +1,23 @@
+### Register
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "name": "prueba",
+    "email": "ab1@example.com",
+    "password": "12345678"
+}
+
+### Login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "name": "prueba",
+    "email": "ab1@example.com",
+    "password": "12345678"
+}
+
+### User index
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicHJ1ZWJhIiwiZW1haWwiOiJhYjFAZXhhbXBsZS5jb20iLCJwYXNzd29yZCI6IjEyMzQ1Njc4IiwiaWF0IjoxNzgxNzIxNTA2LCJleHAiOjE3ODE3MjE1MzZ9.qrpsded2qf63d4m8c44Suwz9OR3H-TVmyEK65rSdevo
