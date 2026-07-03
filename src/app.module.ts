@@ -7,6 +7,7 @@ import { DatabaseModule } from './database/database.module';
 import { ConfigModule } from './config/config.module';
 import { CategoryModule } from './modules/category/category.module';
 import { PersonModule } from './modules/person/person.module';
+import { ProductModule } from './modules/product/product.module';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { PersonModule } from './modules/person/person.module';
     ConfigModule,
     CategoryModule,
     PersonModule,
+    ProductModule,
   ],
   controllers: [AppController],
   providers: [AppService],
