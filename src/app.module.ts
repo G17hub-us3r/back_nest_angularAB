@@ -8,6 +8,7 @@ import { ConfigModule } from './config/config.module';
 import { CategoryModule } from './modules/category/category.module';
 import { PersonModule } from './modules/person/person.module';
 import { ProductModule } from './modules/product/product.module';
+import { RoleModule } from './modules/role/role.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { ProductModule } from './modules/product/product.module';
     CategoryModule,
     PersonModule,
     ProductModule,
+    RoleModule,
   ],
   controllers: [AppController],
   providers: [AppService],

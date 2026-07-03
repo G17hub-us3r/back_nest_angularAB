@@ -1,5 +1,12 @@
+import { Role } from '../../role/entities/role.entity';
 import { Person } from '../../person/entities/person.entity';
-import { Column, Entity, OneToOne, PrimaryGeneratedColumn } from 'typeorm';
+import {
+  Column,
+  Entity,
+  ManyToMany,
+  OneToOne,
+  PrimaryGeneratedColumn,
+} from 'typeorm';
 
 @Entity()
 export class User {
@@ -17,4 +24,7 @@ export class User {
 
   @OneToOne(() => Person, (person) => person.user, { cascade: true })
   person!: Person;
+
+  @ManyToMany(() => Role, (role) => role.users)
+  roles!: Role[];
 }
