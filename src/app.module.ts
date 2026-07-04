@@ -9,6 +9,8 @@ import { CategoryModule } from './modules/category/category.module';
 import { PersonModule } from './modules/person/person.module';
 import { ProductModule } from './modules/product/product.module';
 import { RoleModule } from './modules/role/role.module';
+import { ClientModule } from './modules/client/client.module';
+import { OrderModule } from './modules/order/order.module';
 
 @Module({
   imports: [
@@ -20,6 +22,8 @@ import { RoleModule } from './modules/role/role.module';
     PersonModule,
     ProductModule,
     RoleModule,
+    ClientModule,
+    OrderModule,
   ],
   controllers: [AppController],
   providers: [AppService],
